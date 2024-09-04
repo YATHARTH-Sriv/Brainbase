@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { useUser } from '@clerk/clerk-react'
 import { Sidebar, SidebarBody, SidebarLink } from "../../components/ui/sidebar";
 import {
   IconArrowLeft,
@@ -20,7 +19,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { UserButton } from "@clerk/nextjs";
+// import { UserButton } from "@clerk/nextjs";
 
 const Logo = () => {
   return (
@@ -67,13 +66,13 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: <Link href={"/imagecontext"}>AI Recruiter</Link>,
+    title: <Link href={"/ai-recruit"}>AI Recruiter</Link>,
     description: "I will run phone screenings for you based on your job description. I will ask candidates questions about their experience and resumes, as well as logistics details like work permits, and return a ranking.",
     header: <HeaderWithAnimation title="AI Recruiter" />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Employee Onboarding Assistant",
+    title: <Link href={"/email"}>Employee Onboarding Assistant</Link>,
     description: "I will streamline your new employee onboarding process by guiding them through paperwork, training schedules, and company policies, ensuring a smooth transition into their new role.",
     header: <HeaderWithAnimation title="Help new employee to onboard" />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
@@ -144,8 +143,8 @@ function Page() {
   ];
 
   const [open, setOpen] = useState(false);
-  const { user} = useUser()
-  console.log(user?.fullName)
+  // const { user} = useUser()
+  // console.log(user?.fullName)
 
   return (
     <div className="h-screen w-screen bg-black text-white dark:bg-neutral-800 overflow-hidden flex">
@@ -160,15 +159,19 @@ function Page() {
             </div>
           </div>
           <div>
-           {user &&  <SidebarLink
+           {/* {user &&  <SidebarLink
               link={{
                 label: `${user.fullName}`,
                 href: "#",
                 icon: (
-                  <UserButton/>
+                  <img
+                    src={user.profileImageUrl}
+                    alt="profile"
+                    className="h-5 w-5 rounded-full"
+                  />
                 ),
               }}
-            />}
+            />} */}
           </div>
         </SidebarBody>
       </Sidebar>

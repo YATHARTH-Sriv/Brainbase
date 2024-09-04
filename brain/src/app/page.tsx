@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <div className="flex-1 flex items-center justify-center">
                 <Link
-                  href="#"
+                  href="/"
                   className="flex items-center justify-center"
                   prefetch={false}
                 >
@@ -60,8 +60,8 @@ export default function Home() {
               </div>
               <div className="flex-1 flex items-center justify-end">
                 <Link
-                  href="/sign-in"
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white text-black"
+                  href="/dashboard"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white"
                   prefetch={false}
                 >
                   Get Started
@@ -80,7 +80,7 @@ export default function Home() {
                 <div className="mt-8">
                   <Link
                     href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white text-black"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white"
                     prefetch={false}
                   >
                     Book a Demo
@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="mt-4">
                   <Link
                     href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-8 text-sm font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-8 text-sm font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-black"
                     prefetch={false}
                   >
                     Backed by YC Combinator <Image src="https://upload.wikimedia.org/wikipedia/commons/1/10/Y_Combinator_Logo.png" height={30} width={30} className=" m-2 rounded-md" alt="yc"/>

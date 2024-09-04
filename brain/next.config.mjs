@@ -9,7 +9,8 @@ const nextConfig = {
             {hostname :"t3.ftcdn.net"},
             {hostname :"png.pngtree.com"},
             {hostname :"i.insider.com"},
-            {hostname :"upload.wikimedia.org"}
+            {hostname :"upload.wikimedia.org"},
+            {hostname : "cdn.vox-cdn.com"}
         ]
     }
 };
